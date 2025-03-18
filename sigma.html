@@ -65,11 +65,11 @@
 </head>
 <body>
     <div class="expression" id="expressionBox">
-        Solve this special expression in 32-bit environment:
+        Solve this sigma expression in 32-bit environment:
         <br>
         <span class="math-symbols">e<sup>3.5</sup></span> 
         <span class="integral"> - ∫<sub>0</sub><sup>1</sup> ln(a+1) da</span>
-        <span class="derivative"> + d/dx [x³/3 +1765.270842x] <span class="highlight">(at x=2)</span></span>
+        <span class="derivative"> + d/dx [x³/3 +1765.270842x] +10<span class="highlight">(at x=2)</span></span>
     </div>
 
     <div class="toggle-box" id="toggleBox" onclick="toggleExpression()">
@@ -81,8 +81,7 @@
             const expressionBox = document.getElementById('expressionBox');
             const toggleBox = document.getElementById('toggleBox');
             expressionBox.innerHTML = `
-                <span style="color: #ff6347;">Special</span> + 
-                <span style="color: #32cd32;">10</span> = 
+                <span style="color: #ff6347;">Sigma</span>
                 <span style="color: #ff6347;">1812</span>
                 <br>
                 <span style="color: #ff69b4;">18 DEC</span>`;
